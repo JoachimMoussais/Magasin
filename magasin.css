@@ -1,0 +1,108 @@
+body{
+    width: 100%;
+    height: 750px;
+    background: no-repeat;
+    font-family: Raleway, serif;
+    text-transform: uppercase;
+    background-image: url("images/2466.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+h1 {
+    color:black;
+    padding-top: 8% !important;
+    margin-left: 10%;
+    font-weight: bold !important;
+}
+
+.em{
+    font-size: 10px;
+}
+
+.boite{
+    width: 100px;
+}
+
+.floatright{
+    float: right;
+    clear: both;
+}
+
+.prix{
+    padding-left: 30px;
+}
+
+.container{
+    margin-top: 8%;
+    height: 600px;
+    background-color: white;
+    opacity: 0.97;
+}
+
+#form{
+    width: 600px;
+    height: 400px;
+    margin-top: 40px;
+    font-weight: 550;  
+    margin-left: 10%;
+}
+
+#total{
+    padding-top: 7%;
+    font-size:34px;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+    font: 300 1em/1.5;
+    text-decoration: none;
+    color: #111;
+  }
+  
+
+      a:hover{border-bottom: 1px solid #111;} 
+      h1{font-size: 2em; padding: 20px 0;}
+      p{
+        font-size: .75em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 20px 0;
+      }
+  
+      button:hover{cursor: pointer}
+      button {
+        background: transparent; outline: none;
+        position: relative;
+        border: 2px solid #111;
+        padding: 15px 50px;
+        overflow: hidden;
+      }
+  
+      /*button:before (attr data-hover)*/
+      button:hover:before{opacity: 1; transform: translate(0,0);}
+      button:before{
+        content: attr(data-hover);
+        position: absolute;
+        top: 1.1em; left: 0;
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        opacity: 0;
+        transform: translate(-100%,0);
+        transition: all .3s ease-in-out;
+      }
+        /*button div (button text before hover)*/
+        button:hover div{opacity: 0; transform: translate(100%,0)}
+        button div{
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 800;
+          font-size: .8em;
+          transition: all .3s ease-in-out;
+        }

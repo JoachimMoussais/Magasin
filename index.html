@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="magasin.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Magasin</title>
+    </head>
+    <body>
+        <div class="container">
+
+        <h1>Bienvenue au magasin !</h1>
+        
+        <form method="POST" id="form">
+            
+            <div>
+                <label for="petite">Petite ration :<em class="prix">2€</em> </label>
+                <div class="floatright">
+                <input value="0" class= "boite" type="number" id="petite" name="petite" min="0" max="15">
+                <em class="em">quantité :(0-15) </em><span style="padding-left : 5px" id="totalppr"></span>
+                </div>
+            </div>
+            <div>
+                <label for="grosse">Grosse ration :<em class="prix">8€</em> </label>
+                <div class="floatright">
+                <input value="0" class= "boite" type="number" id="grosse" name="grosse" min="0" max="15">
+                <em class="em">quantité :(0-15) </em><span style="padding-left : 5px" id="totalpgr"></span>
+                </div>
+            </div>
+            <div>
+                <label for="epee">Epée :<em class="prix">20€</em> </label>
+                <div class="floatright">
+                <input value="0" class= "boite" type="number" id="epee" name="epee" min="0" max="15">
+                <em class="em">quantité :(0-15) </em><span style="padding-left : 5px" id="totalpe"></span>
+                </div>
+            </div>
+            <div>
+                <label for="bouclier">Bouclier :<em class="prix">15€</em> </label>
+                <div class="floatright">
+                <input value="0" class= "boite" type="number" id="bouclier" name="bouclier" min="0" max="15">
+                <em class="em">quantité :(0-15) </em><span style="padding-left : 5px" id="totalpb"></span>
+                </div>
+            </div>
+            <div>
+                <label for="potion">Potion :<em class="prix">5€</em> </label>
+                <div class="floatright">
+                <input value="0" class= "boite" type="number" id="potion" name="potion" min="0" max="15">
+                <em class="em">quantité :(0-15) </em><span style="padding-left : 5px" id="totalpp"></span>
+                </div>
+            </div>
+            <div>
+                <label for="sac">Sac de toile :<em class="prix">1€</em> </label>
+                <div class="floatright">
+                <input value="0" class= "boite" type="number" id="sac" name="sac" min="0" max="15">
+                <em class="em">quantité :(0-15) </em><span style="padding-left : 5px" id="totalps"></span>
+                </div>
+            </div>
+
+            <div id="total"></div>
+
+            <div class="button">
+            <button type="submit" id="submit" data-hover="pourquooooiiii ?!"><div>Vider le panier</div></button>
+            </div>
+        
+        </form>
+        </div>
+        
+        <script src="magasin.js"> </script>
+        
+    </body>
+</html>
